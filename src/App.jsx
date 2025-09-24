@@ -1,19 +1,18 @@
 
 import { Header } from './components/Header'
 import './App.css'
-import Count from './components/Count'
-import Plant from './components/CardList'
+
 import ProductList from './components/CardList'
 
 
 function App() {
-
+  const [title, setTitle] = useState("Welcome")
 
   return (
     <>
       <Header />
-      <h1>Vite + React</h1>
-      <ProductList />
+      <h1>{title}</h1>
+      <ProductList setTitle={setTitle} />
     </>
   )
 }
