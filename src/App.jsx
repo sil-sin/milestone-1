@@ -1,19 +1,16 @@
 
 import { Header } from './components/Header'
 import './App.css'
-
-import ProductList from './components/CardList'
-
+import ProductList from './components/ProductsList.jsx'
 
 function App() {
-  const [title, setTitle] = useState("Welcome")
 
   return (
-    <>
+    <main className='flex flex-col min-h-full w-full items-center justify-start'>
       <Header />
-      <h1>{title}</h1>
-      <ProductList setTitle={setTitle} />
-    </>
+      <ProductList />
+    </main>
+
   )
 }
 
